@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-12 mb-4">
+      <div class="col-12 mb-4 mt-3">
        <h1>Attendance Checker</h1>
       </div>  
     </div>
