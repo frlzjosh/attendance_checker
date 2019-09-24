@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-4 mt-3">
-       <h1>Attendance Checker</h1>
+       <h1>Attendance Checker App</h1>
       </div>  
     </div>
     <div class="login">
