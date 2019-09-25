@@ -16,7 +16,7 @@
         <input type="password" placeholder="Password">
       </div>
       <div class="col-12 mt-4">
-        <router-link to="/dashboard"><button class="btn btn-danger">Submit</button></router-link>
+        <router-link to="/example"><button class="btn btn-danger">Submit</button></router-link>
       </div>
     </div>
 
