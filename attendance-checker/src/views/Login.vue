@@ -5,6 +5,7 @@
         <img src = "../assets/csunLogo2.png" class = "mainImage">
         <h3 class="titleText mt-4">Login</h3>
       </div>
+      <div class="row">
       <div class="col-12 pb-1">
         <input type="text" class = "inputBoxes mt-4" v-model="userName" placeholder="Username">
       </div>
@@ -13,6 +14,7 @@
       </div>
       <div class="col-12 mt-4">
         <router-link to="/dashboard"><button class="submitBtn">Submit</button></router-link>
+      </div>
       </div>
     </div>
   </div>
@@ -25,7 +27,7 @@
 <script>
 export default {
   name: 'Login',
-  
+
   data(){
     return{
       userName: null,
