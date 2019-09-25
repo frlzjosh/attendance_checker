@@ -10,6 +10,6 @@
 </template>
 <script>
 export default {
-    name:'DashboardBanner'
+  name: 'DashboardBanner'
 }
 </script>

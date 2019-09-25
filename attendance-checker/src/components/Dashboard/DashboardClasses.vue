@@ -3,17 +3,17 @@
         <h3>List of Classes</h3>
         <div class="dashboard__classes row mt-2">
             <div v-for="(element, index) in classes" class="col-4 dashboard__class" :key="index">
-                <p>YEHH: {{element}}</p>
+                <p>{{element}}</p>
             </div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    name: 'dashboardClasses',
-    props: [
-        'classes'
-    ]
+  name: 'dashboardClasses',
+  props: [
+    'classes'
+  ]
 }
 </script>
 <style lang="scss">
