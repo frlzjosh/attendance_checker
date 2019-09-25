@@ -3,7 +3,7 @@
     <div class="container mt-2">
       <div v-if="getUser" class="row">
         <div class="col-12 text-right">
-          <router-link to="/"><button @click="logout()" class="btn btn-danger">Logout</button></router-link>
+          <router-link to="/"><button @click="logout()" class="btn btn-danger"> Logout</button></router-link>
         </div>
       </div>
     </div>
