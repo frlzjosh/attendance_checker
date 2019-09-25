@@ -3,7 +3,7 @@
         <h3>List of Classes</h3>
         <div class="dashboard__classes row mt-2">
             <div v-for="(element, index) in classes" class="col-4 dashboard__class" :key="index">
-                <p>{{element}}</p>
+                <p>YEHH: {{element}}</p>
             </div>
         </div>
     </div>
