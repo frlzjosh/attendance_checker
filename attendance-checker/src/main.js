@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from './store/indexStore.js'
 import './registerServiceWorker'
 import axios from 'axios'
 
 Vue.config.productionTip = false
 
 Vue.use(axios)
-
 
 new Vue({
   router,

@@ -1,8 +1,38 @@
 <template>
   <div id="app">
+    <div class="container mt-2">
+      <div v-if="getUser" class="row">
+        <div class="col-12 text-right">
+          <router-link to="/"><button @click="logout()" class="btn btn-danger"> Logout</button></router-link>
+        </div>
+      </div>
+    </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import { mapGetters, mapActions} from 'vuex'
+export default {
+  computed: {
+    ...mapGetters(
+      [
+        'getUser'
+      ]
+    )
+  },
+  methods: {
+    ...mapActions(
+      [
+        'clearUserState'
+      ]
+    ),
+    logout(){
+      this.clearUserState()
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

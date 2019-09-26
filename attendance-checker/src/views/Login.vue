@@ -13,34 +13,35 @@
       <input type="password" class = "inputBoxes mt-4" v-model="passWord" placeholder="Password">
       </div>
       <div class="col-12 mt-4">
-        <router-link to="/dashboard"><button class="submitBtn">Submit</button></router-link>
+        <router-link to="/dashboard"><button @click="fillUserStore()" class="submitBtn">Submit</button></router-link>
       </div>
       </div>
     </div>
   </div>
 </template>
 
-
-
-
-
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'Login',
-
-  data(){
-    return{
+  data () {
+    return {
       userName: null,
       passWord: null
+    }
+  },
+  methods: {
+    ...mapActions(
+      [
+        'mutateUserState'
+      ]
+    ),
+    fillUserStore () {
+      this.mutateUserState(this.userName)
     }
   }
 }
 </script>
-
-
-
-
-
 
 <style lang="scss">
 body{
@@ -66,7 +67,6 @@ body{
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
-  
 
   color: #D22030;
 
@@ -115,5 +115,5 @@ h5{
 .icons{
   padding-bottom: 10px;
 }
-  
+
 </style>

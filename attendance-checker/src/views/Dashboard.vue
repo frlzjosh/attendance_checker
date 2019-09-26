@@ -1,24 +1,24 @@
 <template>
   <div class="dashboard container">
     <dashboard-banner></dashboard-banner>
+    Welcome: {{ getUser}}
     <dashboard-classes :classes="classes"></dashboard-classes>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import qrCode from './../components/QRCode'
+import { mapGetters } from 'vuex'
 import dashboardBanner from './../components/Dashboard/DashboardBanner'
 import dashboardClasses from './../components/Dashboard/DashboardClasses'
 export default {
   name: 'dashboard',
   components: {
-    qrCode,
     dashboardBanner,
     dashboardClasses
   },
-  data(){
-    return{
+  data () {
+    return {
       classes: [
         'COMP 490',
         'COMP 430',
@@ -27,6 +27,13 @@ export default {
         'COMP 393'
       ]
     }
+  },
+  computed:{
+    ...mapGetters(
+      [
+        'getUser'
+      ]
+    )
   },
   methods: {
   }
