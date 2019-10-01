@@ -2,6 +2,7 @@
   <div class="dashboard container">
     <dashboard-banner></dashboard-banner>
     Welcome: {{ getUser}}
+    <router-link to="/qr" class="btn btn-primary">QR</router-link>
     <dashboard-classes :classes="classes"></dashboard-classes>
   </div>
 </template>
