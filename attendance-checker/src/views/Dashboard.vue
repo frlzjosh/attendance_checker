@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard container">
     <dashboard-banner></dashboard-banner>
+    <sub-navbar></sub-navbar>
     Welcome: {{ getUser}}
     <router-link to="/qr" class="btn btn-primary">QR</router-link>
     <dashboard-classes :classes="classes"></dashboard-classes>
@@ -12,11 +13,13 @@
 import { mapGetters } from 'vuex'
 import dashboardBanner from './../components/Dashboard/DashboardBanner'
 import dashboardClasses from './../components/Dashboard/DashboardClasses'
+import subNavbar from './../components/Dashboard/SubNavbar'
 export default {
   name: 'dashboard',
   components: {
     dashboardBanner,
-    dashboardClasses
+    dashboardClasses,
+    subNavbar
   },
   data () {
     return {
