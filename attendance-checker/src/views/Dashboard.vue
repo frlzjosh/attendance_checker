@@ -55,7 +55,6 @@ export default {
     }
     &__banner{
       background-color: #FEFEFA;
-      //border: 3px solid #D00D20;
       border-radius: 8px;
       padding: 10px;
     }
@@ -67,7 +66,6 @@ export default {
       font-size: 30px;
       color: white;
       font-style: italic;
-      //text-align: center;
       padding-top: 5px;
       width:100vw;
     }
