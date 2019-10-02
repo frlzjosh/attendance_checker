@@ -1,24 +1,30 @@
 <template>
   <div class="dashboard container">
     <dashboard-banner></dashboard-banner>
-    <dashboard-classes :classes="classes"></dashboard-classes>
+    <div class = "mainHeading">Course Section Selection</div>
+
+    
+    Welcome: {{ getUser}}
+    <class-list></class-list>
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import qrCode from './../components/QRCode'
+import { mapGetters } from 'vuex'
 import dashboardBanner from './../components/Dashboard/DashboardBanner'
 import dashboardClasses from './../components/Dashboard/DashboardClasses'
+import ClassList from './../components/Dashboard/ClassList'
 export default {
   name: 'dashboard',
   components: {
-    qrCode,
     dashboardBanner,
-    dashboardClasses
+    dashboardClasses,
+    ClassList
   },
-  data(){
-    return{
+  data () {
+    return {
       classes: [
         'COMP 490',
         'COMP 430',
@@ -28,6 +34,13 @@ export default {
       ]
     }
   },
+  computed:{
+    ...mapGetters(
+      [
+        'getUser'
+      ]
+    )
+  },
   methods: {
   }
 }
@@ -36,15 +49,36 @@ export default {
 <style lang="scss">
   .dashboard{
     &__img{
-      height: 300px;
-      width: auto;
+      height: 200px;
+      width: 200px;
       border-radius: 50%;
     }
     &__banner{
       background-color: #FEFEFA;
-      border: 3px solid #D00D20;
+      //border: 3px solid #D00D20;
       border-radius: 8px;
       padding: 10px;
     }
+    &__topBar{
+      color: #D22030;
+    }
+    &__mainHeading{
+      background-color: #D22030;
+      font-size: 30px;
+      color: white;
+      font-style: italic;
+      //text-align: center;
+      padding-top: 5px;
+      width:100vw;
+    }
   }
+
+  .mainHeading{
+    background-color: #D22030;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+    }
 </style>

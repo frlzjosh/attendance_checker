@@ -10,10 +10,10 @@
 </template>
 <script>
 export default {
-    name: 'dashboardClasses',
-    props: [
-        'classes'
-    ]
+  name: 'dashboardClasses',
+  props: [
+    'classes'
+  ]
 }
 </script>
 <style lang="scss">
