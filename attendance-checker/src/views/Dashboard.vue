@@ -5,8 +5,8 @@
 
     
     Welcome: {{ getUser}}
+    <router-link to="/qr" class="btn btn-primary">QR</router-link>
     <class-list></class-list>
-    
   </div>
 </template>
 
