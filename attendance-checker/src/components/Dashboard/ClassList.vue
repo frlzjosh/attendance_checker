@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     goToApp(){
-      this.$router.push('/qr')
+      this.$router.push('/roster')
     }
   }
 }

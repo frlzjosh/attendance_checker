@@ -1,10 +1,5 @@
 <template>
     <div class="container">
-        <div class="row mt-2">
-            <div class="col-12">
-                <router-link to="/dashboard" class="btn btn-primary">Dashboard</router-link>
-            </div>
-        </div>
         <div class="row mt-4">
             <div class="col-12">
                 <img class="qr__img" src="./../assets/frame.png" alt="">

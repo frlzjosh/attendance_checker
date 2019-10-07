@@ -6,15 +6,15 @@
         <h3 class="titleText mt-4">Login</h3>
       </div>
       <div class="row">
-      <div class="col-12 pb-1">
-        <input type="text" class = "inputBoxes mt-4" v-model="userName" placeholder="Username">
-      </div>
-      <div class="col-12">
-      <input type="password" class = "inputBoxes mt-4" v-model="passWord" placeholder="Password">
-      </div>
-      <div class="col-12 mt-4">
-        <router-link to="/dashboard"><button @click="fillUserStore()" class="submitBtn">Submit</button></router-link>
-      </div>
+        <div class="col-12 pb-1">
+          <input type="text" class = "inputBoxes mt-4" v-model="userName" placeholder="Username">
+        </div>
+        <div class="col-12">
+          <input type="password" class = "inputBoxes mt-4" v-model="passWord" placeholder="Password">
+        </div>
+        <div class="col-12 mt-4">
+          <router-link to="/dashboard"><button @click="fillUserStore()" class="submitBtn">Submit</button></router-link>
+        </div>
       </div>
     </div>
   </div>

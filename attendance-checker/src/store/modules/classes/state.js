@@ -17,6 +17,37 @@ export default {
       section: '16793\n16794',
       classTime: '03:00PM-03:25PM/\n03:30PM-04:45PM'
     },
-  ]
+  ],
+  roster: [
+    {
+        name: 'Josh',
+        time: '9:31',
+        attendances: 27,
+        status: 'Enrolled',
+        isTardy: 'No'
+    },
+    {
+        name: 'Petra',
+        time: '9:30',
+        attendances: 30,
+        status: 'Enrolled',
+        isTardy: 'No'
+    },
+    {
+        name: 'Jose',
+        time: '9:32',
+        attendances: 25,
+        status: 'Enrolled',
+        isTardy: 'yes'
+    },
+    {
+        name: 'Hugo',
+        time: '9:31',
+        attendances: 23,
+        status: 'Enrolled',
+        isTardy: 'yes'
+    },
+]
+  
 
 }
