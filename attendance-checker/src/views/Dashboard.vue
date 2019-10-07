@@ -1,10 +1,7 @@
 <template>
   <div class="dashboard container">
-    <dashboard-banner></dashboard-banner>
-    <sub-navbar></sub-navbar>
-    Welcome: {{ getUser}}
-    <router-link to="/qr" class="btn btn-primary">QR</router-link>
-    <dashboard-classes :classes="classes"></dashboard-classes>
+      Welcome: {{ getUser}}
+    <class-list></class-list>
   </div>
 </template>
 
@@ -14,12 +11,14 @@ import { mapGetters } from 'vuex'
 import dashboardBanner from './../components/Dashboard/DashboardBanner'
 import dashboardClasses from './../components/Dashboard/DashboardClasses'
 import subNavbar from './../components/Dashboard/SubNavbar'
+import ClassList from './../components/Dashboard/ClassList'
 export default {
   name: 'dashboard',
   components: {
     dashboardBanner,
     dashboardClasses,
-    subNavbar
+    subNavbar,
+    ClassList,
   },
   data () {
     return {
@@ -32,7 +31,7 @@ export default {
       ]
     }
   },
-  computed:{
+  computed: {
     ...mapGetters(
       [
         'getUser'
@@ -47,15 +46,34 @@ export default {
 <style lang="scss">
   .dashboard{
     &__img{
-      height: 300px;
-      width: auto;
+      height: 200px;
+      width: 200px;
       border-radius: 50%;
     }
     &__banner{
       background-color: #FEFEFA;
-      border: 3px solid #D00D20;
       border-radius: 8px;
       padding: 10px;
     }
+    &__topBar{
+      color: #D22030;
+    }
+    &__mainHeading{
+      background-color: #D22030;
+      font-size: 30px;
+      color: white;
+      font-style: italic;
+      padding-top: 5px;
+      width:100vw;
+    }
   }
+
+  .mainHeading{
+    background-color: #D22030;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+    }
 </style>

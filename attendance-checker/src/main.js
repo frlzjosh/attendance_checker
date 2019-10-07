@@ -5,7 +5,7 @@ import store from './store/indexStore.js'
 import './registerServiceWorker'
 import axios from 'axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDog, faArrowAltCircleLeft, faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
+import { faDog, faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faDog)

@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <dashboard-banner></dashboard-banner>
         <div class="row mt-2">
             <div class="col-12">
                 <router-link to="/dashboard" class="btn btn-primary">Dashboard</router-link>
@@ -20,18 +19,14 @@
     </div>
 </template>
 <script>
-import DashboardBanner from './../components/Dashboard/DashboardBanner'
 export default {
-    name: 'QR',
-    components: {
-        DashboardBanner
-    },
-    data(){
-        return{
-            qr_timestamp: 'Generated at 10:03 on 9/23/2019',
-            welcome_msg: "Welcome, John Doe You have 25 Attendances in Comp 490 #1165"
-        }
+  name: 'qrPage',
+  data () {
+    return {
+      qr_timestamp: 'Generated at 10:03 on 9/23/2019',
+      welcome_msg: 'Welcome, John Doe You have 25 Attendances in Comp 490 #1165'
     }
+  }
 }
 </script>
 <style lang="scss">
