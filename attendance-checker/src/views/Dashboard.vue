@@ -3,7 +3,6 @@
     <dashboard-banner></dashboard-banner>
     <div class = "mainHeading">Course Section Selection</div>
 
-    
     Welcome: {{ getUser}}
     <router-link to="/qr" class="btn btn-primary">QR</router-link>
     <class-list></class-list>
