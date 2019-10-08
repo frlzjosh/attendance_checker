@@ -4,6 +4,7 @@ import Dashboard from './views/Dashboard.vue'
 import Login from './views/Login.vue'
 import QR from './views/QR.vue'
 import QrForm from './views/QrForm.vue'
+import Roster from './views/Roster.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
       path: '/qr',
       name: 'qr',
       component: QR
+    },
+    {
+      path: '/roster',
+      name: 'Roster',
+      component: Roster
     },
     {
       path: '/dashboard',

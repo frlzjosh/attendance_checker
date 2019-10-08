@@ -1,28 +1,35 @@
 <template>
-<table class = "container">
-    <tr class = "col-12">
-        <th>Course</th>
-        <th>Class Times</th>
-        <th>Section</th>
-    </tr>
-    <tr v-for="(row, index) in classState" :key=index>
-        <td>{{row.course}}</td>
-        <td>{{row.classTime}}</td>
-        <td>{{row.section}}</td>
-    </tr>
-</table>    
+<div>
+  <table class="container">
+      <tr class="col-12">
+          <th>Course</th>
+          <th>Class Times</th>
+          <th>Section</th>
+      </tr>
+      <tr @click="goToApp()" v-for="(row, index) in classState" :key=index>
+          <td>{{row.course}}</td>
+          <td>{{row.classTime}}</td>
+          <td>{{row.section}}</td>
+      </tr>
+  </table>
+</div>
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 export default {
-    computed: {
-        ...mapState(
-            {
-                classState: state => state.Classes.courseList
-            }
-        )
+  computed: {
+    ...mapState(
+      {
+        classState: state => state.Classes.courseList
+      }
+    )
+  },
+  methods: {
+    goToApp () {
+      this.$router.push('/roster')
     }
+  }
 }
 </script>
 
@@ -49,7 +56,5 @@ td{
     padding-left: 5vw;
     padding-right: 5vw;
 }
-
-
 
 </style>

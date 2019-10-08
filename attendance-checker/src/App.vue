@@ -1,18 +1,22 @@
 <template>
   <div id="app">
-    <div class="container mt-2">
-      <div v-if="getUser" class="row">
+    <div class="mt-2">
+      <div v-if="$route.path !='/'" class="row">
         <div class="col-12 text-right">
-          <router-link to="/"><button @click="logout()" class="btn btn-danger"> Logout</button></router-link>
+          <dashboard-banner></dashboard-banner>
+          <sub-navbar></sub-navbar>
         </div>
       </div>
+
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions} from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
+import SubNavbar from './components/Dashboard/SubNavbar'
+import DashboardBanner from './components/Dashboard/DashboardBanner'
 export default {
   computed: {
     ...mapGetters(
@@ -21,15 +25,9 @@ export default {
       ]
     )
   },
-  methods: {
-    ...mapActions(
-      [
-        'clearUserState'
-      ]
-    ),
-    logout(){
-      this.clearUserState()
-    }
+  components: {
+    SubNavbar,
+    DashboardBanner
   }
 }
 </script>

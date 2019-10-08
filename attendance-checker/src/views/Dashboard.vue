@@ -1,10 +1,6 @@
 <template>
   <div class="dashboard container">
-    <dashboard-banner></dashboard-banner>
-    <div class = "mainHeading">Course Section Selection</div>
-
-    Welcome: {{ getUser}}
-    <router-link to="/qr" class="btn btn-primary">QR</router-link>
+      Welcome: {{ getUser}}
     <class-list></class-list>
   </div>
 </template>
@@ -14,12 +10,14 @@
 import { mapGetters } from 'vuex'
 import dashboardBanner from './../components/Dashboard/DashboardBanner'
 import dashboardClasses from './../components/Dashboard/DashboardClasses'
+import subNavbar from './../components/Dashboard/SubNavbar'
 import ClassList from './../components/Dashboard/ClassList'
 export default {
   name: 'dashboard',
   components: {
     dashboardBanner,
     dashboardClasses,
+    subNavbar,
     ClassList
   },
   data () {
@@ -33,7 +31,7 @@ export default {
       ]
     }
   },
-  computed:{
+  computed: {
     ...mapGetters(
       [
         'getUser'
