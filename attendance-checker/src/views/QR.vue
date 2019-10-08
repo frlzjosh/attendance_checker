@@ -4,6 +4,7 @@
         <div class="row mt-2">
             <div class="col-12">
                 <router-link to="/dashboard" class="btn btn-primary">Dashboard</router-link>
+                <router-link to="/qrform" class="btn btn-primary">Generate QR Form</router-link>
             </div>
         </div>
         <div class="row mt-4">
