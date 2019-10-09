@@ -7,6 +7,8 @@ import axios from 'axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faDog, faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import BootstrapVue from 'bootstrap-vue'
+
 
 library.add(faDog)
 library.add(faArrowAltCircleLeft)
@@ -15,6 +17,7 @@ library.add(faArrowAltCircleRight)
 Vue.config.productionTip = false
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(axios)
+Vue.use(BootstrapVue)
 
 new Vue({
   router,
