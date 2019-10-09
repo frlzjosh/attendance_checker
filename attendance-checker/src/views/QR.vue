@@ -1,5 +1,12 @@
 <template>
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <router-link to="./qrform">
+            <Button class="btn-primary">Generate QR</Button>
+            </router-link>
+            </div>
+        </div>
         <div class="row mt-4">
             <div class="col-12">
                 <img class="qr__img" src="./../assets/frame.png" alt="">

@@ -22,19 +22,19 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-    name: 'RosterList',
-    computed: {
-        ...mapGetters(
-            [
-                'getRoster'
-            ]
-        ),
-    },
-    data(){
-        return{
-            
-        }
+  name: 'RosterList',
+  computed: {
+    ...mapGetters(
+      [
+        'getRoster'
+      ]
+    )
+  },
+  data () {
+    return {
+
     }
+  }
 
 }
 </script>

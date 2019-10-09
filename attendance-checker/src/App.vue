@@ -28,7 +28,7 @@ export default {
   components: {
     SubNavbar,
     DashboardBanner
-  },
+  }
 }
 </script>
 

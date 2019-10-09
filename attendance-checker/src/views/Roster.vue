@@ -5,15 +5,15 @@
 <script>
 import RosterList from './../components/Roster/RosterList'
 export default {
-    name: 'Roster',
-    components: {
-        RosterList
-    },
-    data(){
-        return{
+  name: 'Roster',
+  components: {
+    RosterList
+  },
+  data () {
+    return {
 
-        }
     }
+  }
 
 }
 </script>

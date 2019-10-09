@@ -18,8 +18,8 @@
 import { mapActions } from 'vuex'
 export default {
   name: 'DashboardBanner',
-  data(){
-    return{
+  data () {
+    return {
       professorName: 'Steve Fitzgerald',
       currentCourse: 'Computer Science',
       role: 'Professor'

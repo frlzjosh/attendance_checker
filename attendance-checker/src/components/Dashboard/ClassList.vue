@@ -23,10 +23,10 @@ export default {
       {
         classState: state => state.Classes.courseList
       }
-    ),
+    )
   },
   methods: {
-    goToApp(){
+    goToApp () {
       this.$router.push('/roster')
     }
   }

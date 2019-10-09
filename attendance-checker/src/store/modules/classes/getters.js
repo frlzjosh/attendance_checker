@@ -1,3 +1,3 @@
 export default {
-    getRoster: state => state.roster
+  getRoster: state => state.roster
 }

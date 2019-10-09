@@ -41,19 +41,19 @@ export default {
     }
   },
   methods: {
-    goToDashboard(){
+    goToDashboard () {
       this.$router.push('/dashboard')
     },
     goBack () {
       if (this.currentItemIndex > 0) {
         this.currentItemIndex -= 1
-        this.$router.push('/'+this.itemsRoutes[this.currentItemIndex])
+        this.$router.push('/' + this.itemsRoutes[this.currentItemIndex])
       }
     },
     goForward () {
       if (this.currentItemIndex < this.itemsArray.length - 1) {
         this.currentItemIndex += 1
-        this.$router.push('/'+this.itemsRoutes[this.currentItemIndex])
+        this.$router.push('/' + this.itemsRoutes[this.currentItemIndex])
       }
     }
   }

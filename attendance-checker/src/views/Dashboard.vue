@@ -18,7 +18,7 @@ export default {
     dashboardBanner,
     dashboardClasses,
     subNavbar,
-    ClassList,
+    ClassList
   },
   data () {
     return {
